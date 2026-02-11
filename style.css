@@ -14,6 +14,29 @@ body {
   max-width: 700px;
 }
 
+h1 {
+  animation-duration: 3s;
+  animation-name: text-slide;
+}
+
+@keyframes text-slide {
+
+  0% {
+    transform: translateX(150vw) scale(2);
+  }
+
+  25% {
+    transform:scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: translateX(0vw) scale(1);
+  }
+  
+}
+
 nav {
   width: 100%;
   background-color: #4a4a4a;
