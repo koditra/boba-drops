@@ -14,7 +14,7 @@ body {
   max-width: 700px;
 }
 
-h1 {
+.heading {
   animation-duration: 3s;
   animation-name: text-slide;
 }
@@ -26,10 +26,10 @@ h1 {
   }
 
   25% {
-    transform:scale(1);
+    transform:translateX(75vw) scale(1);
   }
   50% {
-    transform: scale(2);
+    transform: translateX(25vw) scale(2);
   }
   100% {
     transform: translateX(0vw) scale(1);
