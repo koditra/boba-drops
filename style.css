@@ -15,12 +15,34 @@ body {
 }
 
 .heading {
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-name: text-slide;
+}
+
+.typewriter h1 {
+  animation-duration: 2.5s;
+  animation-name: typewriter;
 }
 
 @keyframes text-slide {
 
+  0% {
+    transform: translateX(150vw) scale(2);
+  }
+
+  25% {
+    transform:translateX(75vw) scale(1);
+  }
+  50% {
+    transform: translateX(25vw) scale(2);
+  }
+  100% {
+    transform: translateX(0vw) scale(1);
+  }
+  
+}
+
+@keyframes typewriter {
   0% {
     transform: translateX(150vw) scale(2);
   }
