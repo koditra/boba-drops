@@ -4,6 +4,11 @@ body {
   color: #4aff75;
   margin: 0;
   padding: 0;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .container {
@@ -12,6 +17,8 @@ body {
   margin: 60px auto;
   border-radius: 8px;
   max-width: 700px;
+  max-height: 150px;
+  flex: 1;
 }
 
 .heading {
@@ -59,13 +66,31 @@ body {
   
 }
 
+#music-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  background: black;
+  color: #4aff75;
+  border: 2px solid #4aff75;
+  padding: 10px 18px;
+  font-family: Hack, monospace;
+  cursor: pointer;
+}
+
+#music-btn:hover {
+  background: #4aff75;
+  color: black;
+}
+
 footer {
   text-align: center;
   padding: 15px;
   background: #1a1a1a;
   color: #4aff75;
   border-top: 2px solid #4aff75;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 nav {
